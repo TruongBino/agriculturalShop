@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/iconaaddavatar"
+        android:layout_marginBottom="20dp"></ImageView>
+    <TextView
+        android:id="@+id/edt_userName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_person_24"
+        android:hint="Tên người dùng"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/edt_phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_phone_24"
+        android:hint="Số điện thoại"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:paddingEnd="15dp"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        android:id="@+id/edt_password"
+        android:imeOptions="actionDone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Mật khẩu"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/btn_signUp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn"
+        app:backgroundTint="@null"
+        android:text="Cập nhật tài khoản"/>
+</LinearLayout>

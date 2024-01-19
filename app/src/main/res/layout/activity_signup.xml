@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/view_avatar"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/iconaaddavatar"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cập nhật ảnh đại diện"></TextView>
+    <ImageButton
+        android:id="@+id/btn_uploadAvatar"
+        android:layout_gravity="center"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/baseline_folder_upload_24"
+        android:layout_marginBottom="20dp"></ImageButton>
+
+    <EditText
+        android:id="@+id/edt_userName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_person_24"
+        android:hint="Tên người dùng"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_phone_24"
+        android:hint="Số điện thoại"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:paddingEnd="15dp"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        android:id="@+id/edt_password"
+        android:imeOptions="actionDone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Mật khẩu"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn"
+        app:backgroundTint="@null"
+        android:text="Đăng ký"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Đã có tài khoản ? "/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Đăng nhập"/>
+    </LinearLayout>
+</LinearLayout>
